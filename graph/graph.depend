@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1755525429 source:c:\users\anindo\desktop\dsa'\graph\header.cpp
+	"header.h"
+	"quetype.h"
+	<iostream>
+
+1755525407 c:\users\anindo\desktop\dsa'\graph\header.h
+	"quetype.h"
+
+1755525565 c:\users\anindo\desktop\dsa'\graph\quetype.h
+	<iostream>
+
+1755525579 source:c:\users\anindo\desktop\dsa'\graph\quetype.cpp
+	"quetype.h"
+
