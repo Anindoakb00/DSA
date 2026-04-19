@@ -1,4 +1,4 @@
-//find the smallest and largest value from an array
+
 #include <iostream>
 #include <vector>
 using namespace std;
