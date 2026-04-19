@@ -20,30 +20,21 @@ void PrintList(UnsortedType<int>& list)
 int sort(UnsortedType<int>& list)
 {
     int n = list.Length();
-    if (n <= 1)
-    {
-        return n;
-    }
-
+    if(n<=0)
+    return 0;
     int* arr = new int[n];
-
-    // 1. Snapshot list into array.
     list.Reset();
-    for (int i = 0; i < n; i++)
-    {
+    for(int i=0; i<n;i++){
         list.GetNext(arr[i]);
     }
 
     // 2. Bubble sort array in ascending order.
-    for (int i = 0; i < n - 1; i++)
-    {
-        for (int j = 0; j < n - 1 - i; j++)
-        {
-            if (arr[j] > arr[j + 1])
-            {
+    for(int i=0;i<n-1;i++){
+        for (int j=0; j<n-1-i; j++){
+            if(arr[j] > arr[j+1]){
                 int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
             }
         }
     }
